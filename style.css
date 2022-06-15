@@ -440,6 +440,93 @@ display: block;
   color: #27bcda;
   background-color: transparent;
 }
+       /* ===== SKILLS =====*/
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root{
+    --header-height: 3rem;
+    --font-medium: 500;
+}
+
+/*===== Colores =====*/
+:root{
+    /* --first-color:#F17105; #F25F5C;#6610F2 */
+    --first-color: #6610F2;
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+}
+/*===== Fuente y tipografia =====*/
+:root{
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 6.25rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/*===== CLASS CSS ===== */
+.section{
+    padding: 3rem 0;
+}
+/*===== LAYOUT =====*/
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/* ===== SKILLS =====*/
+.skills__container{
+    row-gap: 2rem;
+}
+.skills__subtitle{
+    text-align: left;
+    color: var(--first-color);
+    margin-bottom: 1.5rem;
+}
+.skills__name{
+    display: inline-block;
+    font-size: .875rem;
+    margin-right:1rem;
+    margin-bottom: 1.5rem;
+    padding: .25rem .5rem;
+    background-color: #fff;
+    border-radius: .25rem;
+}
+.skills__name:hover{
+    background-color: #000;
+    color:#fff;
+}
+.skills__img img{
+    border-radius: .5rem;
+}
+
+
+@media screen and (min-width: 768px){
+    .skills__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
       
 @media (max-width:500px) {
 .footer-menu ul{
