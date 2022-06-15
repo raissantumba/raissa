@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <title>Raissa</title>
+    <style>
+        /* ===== SKILLS =====*/
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root{
+    --header-height: 3rem;
+    --font-medium: 500;
+}
+
+/*===== Colores =====*/
+:root{
+    /* --first-color:#F17105; #F25F5C;#6610F2 */
+    --first-color: #6610F2;
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+}
+
+/*===== Fuente y tipografia =====*/
+:root{
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 6.25rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+}
+
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/*===== CLASS CSS ===== */
+.section{
+    padding: 3rem 0;
+}
+/*===== LAYOUT =====*/
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+
+
+/* ===== SKILLS =====*/
+.skills__container{
+    row-gap: 2rem;
+}
+.skills__subtitle{
+    text-align: left;
+    color: var(--first-color);
+    margin-bottom: 1.5rem;
+}
+.skills__name{
+    display: inline-block;
+    font-size: .875rem;
+    margin-right:1rem;
+    margin-bottom: 1.5rem;
+    padding: .25rem .5rem;
+    background-color: #fff;
+    border-radius: .25rem;
+}
+.skills__name:hover{
+    background-color: #000;
+    color:#fff;
+}
+.skills__img img{
+    border-radius: .5rem;
+}
+
+
+@media screen and (min-width: 768px){
+    .skills__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" name="" id="check">
+            <label for="check" class="checkbtn">
+                <i class="icon-bars"></i>
+            </label>
+            <label class="logo">Raissa</label>
+            <ul class="navigation">
+                <li><a class="#active" href="">accueil</a></li>
+                <li><a href="#apropos">Apropos</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner">
+        <img src="banner.jpg" alt="" class="img_banner">
+        <div class="opacity"></div>
+        <div class="text-content">
+            <h2>Bienvenue !</h2>
+            <h5>I'm Raissa Ntumba</h5>
+            <P>WEB DEVELOPPEUR FRONT END</P>
+            <a href="" class="btn">Contactez-moi</a>
+        </div>
+    </section>
+    <section class="main apropos" id="apropos">
+        <h3 class=''>a propos</h3>
+        <div class="content">
+            <div class="left content-apropos">
+                <img src="img/IMG_0299.JPG" alt="">
+            </div>
+            <div class="right content-apropos">
+                <p>
+                    je m'appelle Raissa Ntumba,j'ai 22 ans je vis à lubumbashi.
+                    je suis en deuxième bachelier à l'universite de lubumbashi (UNILU)
+                    curieuse,autodidacte et rigoureuse je dispose également un bagage solide en informatique;
+                    N'hésitez pas à parcourir mon site pour apprendre d'avantage!
+                    je m'appelle Raissa Ntumba,j'ai 22 ans je vis à lubumbashi.
+                    je suis en deuxième bachelier à l'universite de lubumbashi (UNILU)
+                    curieuse,autodidacte et rigoureuse je dispose également un bagage solide en informatique;
+                    N'hésitez pas à parcourir mon site pour apprendre d'avantage!
+                    je m'appelle Raissa Ntumba,j'ai 22 ans je vis à lubumbashi.
+                    je suis en deuxième bachelier à l'universite de lubumbashi (UNILU)
+                    curieuse,autodidacte et rigoureuse je dispose également un bagage solide en informatique;
+                    N'hésitez pas à parcourir mon site pour apprendre d'avantage!
+                </p>
+            </div>
+        </div>
+    </section>
+     <!--===== SKILLS =====-->
+     <section class="skills section" id="skills">
+        <h3 class="section-title">Mes competences</h3>
+
+        <div class="skills__container bd-grid">
+            <div class="skills__box">
+                <h3 class="skills__subtitle">Developpement</h3>
+                <span class="skills__name">Html</span>
+                <span class="skills__name">CSS</span>
+                <span class="skills__name">Javascript</span>
+            </div>
+
+            <div class="skills__img">
+                <img src="img/video-motion-design-paperboard-professionnelle-communication.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="parcours" id="parcours">
+        <div class="timeline">
+            <div class="container left">
+              <div class="content-timeline">
+                <h2>2017</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content-timeline">
+                <h2>2016</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content-timeline">
+                <h2>2015</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content-timeline">
+                <h2>2012</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content-timeline">
+                <h2>2011</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content-timeline">
+                <h2>2007</h2>
+                <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <h3>Gallery</h3>
+        <div class="gallery">
+            <img src="img/IMG_0299.JPG" alt="">
+            <img src="img/IMG_0304.JPG" alt="">
+            <img src="img/IMG_0304.JPG" alt="">
+            <img src="img/IMG_0629.JPG" alt="">
+            <img src="img/IMG_0637.JPG" alt="">
+            <img src="img/IMG_0811.JPG" alt="">
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h3>contactez-moi</h3>
+        <form action="">
+            <div class="card-content">
+                <div class="box separateur">
+                    <input type="text" placeholder="Votre nom et Votre prenom">
+                    <i class="icon-person"></i>
+                    <input type="tel" placeholder="Votre telephone">
+                    <i class="icon-phone-square"></i>
+                    <input type="text" placeholder="Votre adresse E-mail">
+                    <i class="icon-envelope"></i>
+                </div>
+                <div class="petit-messa separateur">
+                    <textarea name="laissez un petit message" id="" cols="30" rows="10" placeholder="laissez un petit message ici"></textarea> 
+                </div>
+            </div>
+            <button class="btn">Envoyer</button>
+        </form>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Developpeuse web</h3>
+            <p>Je suis Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem accusantium id maiores, repellat iusto ab autem veniam, eos tempora eligendi dolorum quia cum quas molestias adipisci nobis voluptas officiis!.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="icon icon-facebook-square"></i></a></li>
+                <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
+                <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                <li><a href="#"><i class="icon icon-github"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 <a href="#">Raissa Ntumba front-end web developer</a>  </p>
+            <div class="footer-menu">
+                <ul class="f-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
